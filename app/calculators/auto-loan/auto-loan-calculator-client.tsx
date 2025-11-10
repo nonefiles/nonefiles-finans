@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Calculator, TrendingUp, DollarSign } from "lucide-react"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export default function AutoLoanCalculatorClient() {
   const [vehiclePrice, setVehiclePrice] = useState("35000")
@@ -276,9 +277,7 @@ export default function AutoLoanCalculatorClient() {
             </Card>
 
             {/* Ad Placeholder */}
-            <div className="p-6 border-2 border-dashed border-border rounded-lg text-center text-sm text-muted-foreground">
-              Ad Space - 300x250
-            </div>
+            <AdSenseAd adSlot="1234567890" format="rectangle" />
           </div>
         </div>
 

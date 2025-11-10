@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export default function MortgageCalculatorClient() {
   const [homePrice, setHomePrice] = useState("300000")
@@ -394,9 +395,7 @@ export default function MortgageCalculatorClient() {
               </div>
             </Card>
 
-            <div className="ad-slot ad-sidebar bg-muted/50 border border-border rounded flex items-center justify-center min-h-[600px] text-sm text-muted-foreground">
-              Ad — 300x600
-            </div>
+            <AdSenseAd adSlot="1234567891" format="vertical" fullWidth={true} />
           </div>
         </div>
 

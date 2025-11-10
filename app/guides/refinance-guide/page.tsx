@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Calculator, Home, TrendingUp, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export const metadata = {
   title: "Refinance Calculator Guide & When to Refinance Your Mortgage | LoanSense",
@@ -13,9 +14,7 @@ export default function RefinanceGuidePage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 max-w-5xl">
-        <div className="ad-slot ad-top bg-muted/30 h-24 flex items-center justify-center text-muted-foreground text-sm mb-8 rounded">
-          Ad Space - Top Banner
-        </div>
+        <AdSenseAd adSlot="1234567924" format="rectangle" />
 
         <article className="prose prose-slate max-w-none">
           <h1 className="text-4xl font-bold mb-4 text-foreground">
@@ -100,9 +99,7 @@ export default function RefinanceGuidePage() {
             adjustable-rate mortgages to fixed rates, or access home equity through cash-out refinancing.
           </p>
 
-          <div className="ad-slot ad-inline bg-muted/30 h-32 flex items-center justify-center text-muted-foreground text-sm my-8 rounded">
-            Ad Space - Inline Content
-          </div>
+          <AdSenseAd adSlot="1234567925" format="horizontal" fullWidth={true} />
 
           <h2 id="when-refinance" className="text-2xl font-bold mt-12 mb-4 text-foreground">
             When to Refinance

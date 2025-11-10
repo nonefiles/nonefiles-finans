@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { CalculatorCard } from "@/components/calculator-card"
+import { AdSenseAd } from "@/components/adsense-ad"
 import { Home, Car, RefreshCw } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -32,9 +33,7 @@ export default function HomePage() {
 
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
-          <div className="ad-slot ad-top bg-muted/50 border border-border rounded flex items-center justify-center h-[90px] text-sm text-muted-foreground">
-            Ad — 728x90 / Responsive
-          </div>
+          <AdSenseAd adSlot="1234567920" format="horizontal" fullWidth={true} />
         </div>
       </div>
 
@@ -60,9 +59,7 @@ export default function HomePage() {
           </div>
 
           <div className="mb-12">
-            <div className="ad-slot ad-inline bg-muted/50 border border-border rounded flex items-center justify-center h-[250px] text-sm text-muted-foreground">
-              Ad — Responsive Rectangle
-            </div>
+            <AdSenseAd adSlot="1234567921" format="rectangle" />
           </div>
 
           {/* Info Section */}
@@ -97,9 +94,7 @@ export default function HomePage() {
       </footer>
 
       <div className="ad-slot ad-sticky-mobile fixed bottom-0 left-0 right-0 bg-background border-t md:hidden z-40">
-        <div className="bg-muted/50 flex items-center justify-center h-[50px] text-xs text-muted-foreground">
-          Ad — Mobile Sticky Banner
-        </div>
+        <AdSenseAd adSlot="1234567922" format="horizontal" fullWidth={true} />
       </div>
     </div>
   )

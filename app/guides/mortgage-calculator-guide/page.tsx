@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Calculator, Home, TrendingUp, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export const metadata = {
   title: "Mortgage Calculator: How Your Payment is Calculated (Principal & Interest Breakdown) | LoanSense",
@@ -13,9 +14,7 @@ export default function MortgageCalculatorGuidePage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 max-w-5xl">
-        <div className="ad-slot ad-top bg-muted/30 h-24 flex items-center justify-center text-muted-foreground text-sm mb-8 rounded">
-          Ad Space - Top Banner
-        </div>
+        <AdSenseAd adSlot="1234567910" format="horizontal" fullWidth={true} />
 
         <article className="prose prose-slate max-w-none">
           <h1 className="text-4xl font-bold mb-4 text-foreground">
@@ -104,9 +103,7 @@ export default function MortgageCalculatorGuidePage() {
             principal, r is monthly interest rate, and n is number of payments.
           </p>
 
-          <div className="ad-slot ad-inline bg-muted/30 h-32 flex items-center justify-center text-muted-foreground text-sm my-8 rounded">
-            Ad Space - Inline Content
-          </div>
+          <AdSenseAd adSlot="1234567911" format="rectangle" />
 
           <h2 id="components" className="text-2xl font-bold mt-12 mb-4 text-foreground">
             Payment Components (PITI)
@@ -376,9 +373,7 @@ export default function MortgageCalculatorGuidePage() {
           />
         </article>
 
-        <div className="ad-slot ad-bottom bg-muted/30 h-24 flex items-center justify-center text-muted-foreground text-sm mt-12 rounded">
-          Ad Space - Bottom Banner
-        </div>
+        <AdSenseAd adSlot="1234567912" format="horizontal" fullWidth={true} />
       </div>
     </div>
   )

@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card"
 import Link from "next/link"
 import { ArrowLeft, Home, Calculator } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export const metadata = {
   title: "Complete Mortgage Guide - Loan Calculator Hub",
@@ -231,9 +232,7 @@ export default function MortgageGuidePage() {
         </div>
 
         {/* Ad Placeholder */}
-        <div className="mt-12 p-6 border-2 border-dashed border-border rounded-lg text-center text-muted-foreground">
-          Ad Space - 728x90
-        </div>
+        <AdSenseAd adSlot="1234567913" format="horizontal" fullWidth={true} />
       </main>
     </div>
   )

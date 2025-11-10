@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Calculator, TrendingUp, TrendingDown, AlertCircle, CheckCircle } from "lucide-react"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export default function RefinanceCalculatorClient() {
   // Current loan
@@ -365,9 +366,7 @@ export default function RefinanceCalculatorClient() {
             </Card>
 
             {/* Ad Placeholder */}
-            <div className="p-6 border-2 border-dashed border-border rounded-lg text-center text-sm text-muted-foreground">
-              Ad Space - 300x250
-            </div>
+            <AdSenseAd adSlot="1234567893" format="rectangle" />
           </div>
         </div>
 

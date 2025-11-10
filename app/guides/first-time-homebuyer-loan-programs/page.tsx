@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Calculator, Home, DollarSign } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export const metadata: Metadata = {
   title: "First-Time Homebuyer Loans (2025): FHA, VA, USDA, and Down Payment Assistance",
@@ -16,9 +17,7 @@ export default function FirstTimeHomebuyerPage() {
       {/* Ad Space - Top Leaderboard */}
       <div className="bg-muted border-b">
         <div className="container mx-auto px-4 py-4">
-          <div className="bg-accent/50 rounded flex items-center justify-center h-[90px] text-sm text-muted-foreground">
-            Advertisement Space (728x90)
-          </div>
+          <AdSenseAd adSlot="1234567900" format="horizontal" fullWidth={true} />
         </div>
       </div>
 
@@ -155,9 +154,7 @@ export default function FirstTimeHomebuyerPage() {
 
             {/* Ad Space - In-Content */}
             <div className="my-8 not-prose">
-              <div className="bg-accent/50 rounded flex items-center justify-center h-[250px] text-sm text-muted-foreground">
-                Advertisement Space (300x250)
-              </div>
+              <AdSenseAd adSlot="1234567901" format="rectangle" />
             </div>
 
             {/* Section 2 */}
@@ -298,9 +295,7 @@ export default function FirstTimeHomebuyerPage() {
 
             {/* Ad Space - In-Content */}
             <div className="my-8 not-prose">
-              <div className="bg-accent/50 rounded flex items-center justify-center h-[250px] text-sm text-muted-foreground">
-                Advertisement Space (300x250)
-              </div>
+              <AdSenseAd adSlot="1234567902" format="rectangle" />
             </div>
 
             {/* Section 4 */}
@@ -634,9 +629,7 @@ export default function FirstTimeHomebuyerPage() {
           <aside className="space-y-6">
             {/* Ad Space - Sidebar */}
             <div className="sticky top-4">
-              <div className="bg-accent/50 rounded flex items-center justify-center h-[600px] text-sm text-muted-foreground">
-                Advertisement Space (300x600)
-              </div>
+              <AdSenseAd adSlot="1234567903" format="vertical" fullWidth={true} />
             </div>
           </aside>
         </div>

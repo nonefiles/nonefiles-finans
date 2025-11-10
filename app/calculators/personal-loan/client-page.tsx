@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calculator, TrendingUp, DollarSign } from "lucide-react"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export default function PersonalLoanCalculatorClientPage() {
   const [loanAmount, setLoanAmount] = useState("15000")
@@ -205,9 +206,7 @@ export default function PersonalLoanCalculatorClientPage() {
                 </Card>
 
                 {/* Ad Placeholder */}
-                <div className="p-6 border-2 border-dashed border-border rounded-lg text-center text-sm text-muted-foreground">
-                  Ad Space - 300x250
-                </div>
+                <AdSenseAd adSlot="1234567892" format="rectangle" />
               </div>
             </div>
           </TabsContent>
@@ -336,9 +335,7 @@ export default function PersonalLoanCalculatorClientPage() {
                 </Card>
 
                 {/* Ad Placeholder */}
-                <div className="p-6 border-2 border-dashed border-border rounded-lg text-center text-sm text-muted-foreground">
-                  Ad Space - 300x250
-                </div>
+                <AdSenseAd adSlot="1234567892" format="rectangle" />
               </div>
             </div>
           </TabsContent>

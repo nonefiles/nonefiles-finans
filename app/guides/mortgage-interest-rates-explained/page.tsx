@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Calculator, TrendingUp, BarChart3, AlertCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export const metadata: Metadata = {
   title: "Mortgage Interest Rates Explained: Fixed vs. ARM and Factors Affecting Rates",
@@ -16,9 +17,7 @@ export default function MortgageInterestRatesPage() {
       {/* Ad Space - Top Leaderboard */}
       <div className="bg-muted border-b">
         <div className="container mx-auto px-4 py-4">
-          <div className="bg-accent/50 rounded flex items-center justify-center h-[90px] text-sm text-muted-foreground">
-            Advertisement Space (728x90)
-          </div>
+          <AdSenseAd adSlot="1234567914" format="horizontal" fullWidth={true} />
         </div>
       </div>
 
@@ -153,9 +152,7 @@ export default function MortgageInterestRatesPage() {
 
             {/* Ad Space - In-Content */}
             <div className="my-8 not-prose">
-              <div className="bg-accent/50 rounded flex items-center justify-center h-[250px] text-sm text-muted-foreground">
-                Advertisement Space (300x250)
-              </div>
+              <AdSenseAd adSlot="1234567915" format="rectangle" />
             </div>
 
             {/* Section 2 */}
@@ -385,9 +382,7 @@ export default function MortgageInterestRatesPage() {
 
             {/* Ad Space - In-Content */}
             <div className="my-8 not-prose">
-              <div className="bg-accent/50 rounded flex items-center justify-center h-[250px] text-sm text-muted-foreground">
-                Advertisement Space (300x250)
-              </div>
+              <AdSenseAd adSlot="1234567915" format="rectangle" />
             </div>
 
             {/* Section 4 */}
@@ -588,9 +583,7 @@ export default function MortgageInterestRatesPage() {
           <aside className="space-y-6">
             {/* Ad Space - Sidebar */}
             <div className="sticky top-4">
-              <div className="bg-accent/50 rounded flex items-center justify-center h-[600px] text-sm text-muted-foreground">
-                Advertisement Space (300x600)
-              </div>
+              <AdSenseAd adSlot="1234567916" format="vertical" fullWidth={true} />
             </div>
           </aside>
         </div>

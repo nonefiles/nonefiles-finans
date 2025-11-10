@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Calculator, Home, TrendingUp, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 export const metadata = {
   title: "30-Year vs 15-Year Mortgage: Cost, Risk, and Financial Flexibility Analysis | LoanSense",
@@ -16,6 +17,8 @@ export default function MortgageTermComparisonPage() {
         <div className="ad-slot ad-top bg-muted/30 h-24 flex items-center justify-center text-muted-foreground text-sm mb-8 rounded">
           Ad Space - Top Banner
         </div>
+
+        <AdSenseAd adSlot="1234567894" format="horizontal" fullWidth={true} />
 
         <article className="prose prose-slate max-w-none">
           <h1 className="text-4xl font-bold mb-4 text-foreground">
@@ -136,6 +139,8 @@ export default function MortgageTermComparisonPage() {
           <div className="ad-slot ad-inline bg-muted/30 h-32 flex items-center justify-center text-muted-foreground text-sm my-8 rounded">
             Ad Space - Inline Content
           </div>
+
+          <AdSenseAd adSlot="1234567895" format="rectangle" />
 
           <h2 id="payment-comparison" className="text-2xl font-bold mt-12 mb-4 text-foreground">
             Payment Comparison
@@ -419,6 +424,8 @@ export default function MortgageTermComparisonPage() {
             }}
           />
         </article>
+
+        <AdSenseAd adSlot="1234567896" format="horizontal" fullWidth={true} />
 
         <div className="ad-slot ad-bottom bg-muted/30 h-24 flex items-center justify-center text-muted-foreground text-sm mt-12 rounded">
           Ad Space - Bottom Banner
